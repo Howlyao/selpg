@@ -49,6 +49,8 @@ selpg -s 1 -e 1
 ```
 ![image](https://github.com/Howlyao/selpg/blob/master/image/1.png)
 
+---
+
 2、selpg -s start_page -e end_page input_file
 
 命令将把“input_file”特定页写至标准输出（也就是屏幕）
@@ -59,6 +61,9 @@ selpg -s 1 -e 1 test.md
 ![image](https://github.com/Howlyao/selpg/blob/master/image/2.png)
 ![image](https://github.com/Howlyao/selpg/blob/master/image/3.png)
 
+---
+
+
 3、selpg -s start_page -e end_page < input_file
 
 selpg 读取标准输入，而标准输入已被 shell／内核重定向为来自“input_file”而不是显式命名的文件名参数。输入的特定页被写至屏幕
@@ -67,6 +72,8 @@ selpg 读取标准输入，而标准输入已被 shell／内核重定向为来�
 selpg -s 1 -e 1 < test.md
 ```
 ![image](https://github.com/Howlyao/selpg/blob/master/image/4.png)
+
+---
 
 4、command | selpg -s start_page -e end_page
 
@@ -77,6 +84,8 @@ cat test.md | selpg -s 1 -e 1
 ```
 ![image](https://github.com/Howlyao/selpg/blob/master/image/5.png)
 
+---
+
 5、selpg -s start_page -e end_page input_file > output_file
 
 selpg 将特定页写至标准输出；标准输出被 shell／内核重定向至“output_file”
@@ -85,6 +94,8 @@ selpg -s 1 -e 1 test.md > output_file
 ```
 ![image](https://github.com/Howlyao/selpg/blob/master/image/6.png)
 
+---
+
 6、selpg -s start_page -e end_page input_file 2>error_file
 
 selpg 将特定页写至标准输出（屏幕）；所有的错误消息被 shell／内核重定向至“error_file”
@@ -92,6 +103,8 @@ selpg 将特定页写至标准输出（屏幕）；所有的错误消息被 shel
 selpg -s 1 -e 1 test.md 2>error_file
 ```
 ![image](https://github.com/Howlyao/selpg/blob/master/image/7.png)
+
+---
 
 7、selpg -s start_page -e end_page input_file | command
 
@@ -102,6 +115,8 @@ selpg -s 1 -e 1 test.md | selpg -s 2 -e 2 -l 2
 ```
 ![image](https://github.com/Howlyao/selpg/blob/master/image/8.png)
 
+---
+
 8、selpg -s start_page -e end_page -l lines_per_page input_file
 
 该命令将页长设置为lines_page_page行，这样 selpg 就可以把输入当作被定界为该长度的页那样处理。特定页被写至 selpg 的标准输出（屏幕）。
@@ -109,6 +124,8 @@ selpg -s 1 -e 1 test.md | selpg -s 2 -e 2 -l 2
 selpg -s 1 -e 1 -l 1 test.md 
 ```
 ![image](https://github.com/Howlyao/selpg/blob/master/image/9.png)
+
+---
 
 ### 参考文献
 
