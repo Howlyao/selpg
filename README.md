@@ -44,4 +44,7 @@ main : 调用Init(),process_args(),process_input()函数
 ```
 selpg -s 1 -e 1 
 ```
-
+2、selpg -s start_page -e end_page input_file
+```
+selpg -s 1 -e 1 test.md
+```
